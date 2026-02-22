@@ -5,7 +5,6 @@
       "version": "3.11"
     }
   },
-  "initializeCommand": "sudo rm -f /etc/apt/sources.list.d/yarn.list || true",
   "customizations": {
     "vscode": {
       "extensions": [
@@ -14,5 +13,5 @@
       ]
     }
   },
-  "postCreateCommand": "pip install uv && uv pip install fastapi"
+  "postCreateCommand": "python3 -m ensurepip --upgrade && python3 -m pip install --upgrade pip && python3 -m pip install uv fastapi"
 }
