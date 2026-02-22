@@ -1,6 +1,11 @@
 {
   "name": "ga2-34e66b",
-  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+  "features": {
+    "ghcr.io/devcontainers/features/python:1": {
+      "version": "3.11"
+    }
+  },
+  "initializeCommand": "sudo rm -f /etc/apt/sources.list.d/yarn.list || true",
   "customizations": {
     "vscode": {
       "extensions": [
